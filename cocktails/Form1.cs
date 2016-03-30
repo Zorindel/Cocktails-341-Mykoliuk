@@ -24,5 +24,20 @@ namespace cocktails
             this.продуктыTableAdapter.Fill(this.drinksDataSet.Продукты);
 
         }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {         
+            продуктыTableAdapter.Update(drinksDataSet);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            тараTableAdapter.Update(drinksDataSet);
+        }
     }
 }
